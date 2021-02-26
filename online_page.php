@@ -43,7 +43,8 @@
                 <a href="#" class="ml-3">Bread class</a>
                 <a href="#" class="ml-3">News</a>
                 <a href="#" class="ml-3">Contact us</a>
-                <a href="member_login.php" class="ml-5">Login</a>
+                <a href="costumer_order_list.php">check purchased sweets</a>
+                <a href="logout.php" class="ml-5">logout</a>
                 <br>
 
     </div>

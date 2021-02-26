@@ -146,7 +146,7 @@ class Sweets extends Database{
         $result = $this->conn->query($sql);
 
         if($result == TRUE){
-            header('location:member_list.php');
+            header('location:member_login.php');
     }else{
         die('ERROR: '.$this->conn->error);
     }
@@ -209,6 +209,19 @@ class Sweets extends Database{
 
     }
     public function getUserOrders($id){
+      $sql = "SELECT * FROM order_list INNER JOIN members ON order_list.member_id = members.m_id WHERE order_list.member_id = '$id'";
+      $result = $this->conn->query($sql);
+
+      if($result->num_rows > 0 ){
+          $container = array();
+          while($row = $result->fetch_assoc()){
+            $container[] = $row;
+          }
+
+          return $container;
+      }else{
+          return FALSE;
+      }
 
     }
     

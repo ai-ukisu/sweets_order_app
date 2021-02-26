@@ -46,7 +46,7 @@
                 <div class="row">
                <div class="col-12">
                   <p class="mt-3">Enter Password</p>
-                     <input type="text" name="password" class="form-control">
+                     <input type="password" name="password" class="form-control">
                      </div>
                 </div>   
                 <div class="row">
